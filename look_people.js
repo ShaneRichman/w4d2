@@ -19,7 +19,6 @@ client.connect((err) => {
       return console.error("error running query", err);
     }
 
-    console.log(result.rows.length);
     console.log("Searching ...");
     console.log(`Found ${result.rows.length} person(s) by the name ${user_input}:`);
     for (let currentPerson in result.rows) {
